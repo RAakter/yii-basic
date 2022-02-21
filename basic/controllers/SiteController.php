@@ -134,6 +134,7 @@ class SiteController extends Controller
      */
     public function actionBlog()
     {
-        return $this->render('blog');
+        $message = 'Hello World!';
+        return $this->render('blog',[ 'message' => $message ]);
     }
 }
